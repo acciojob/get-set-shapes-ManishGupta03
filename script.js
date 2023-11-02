@@ -4,9 +4,9 @@ class Rectangle {
 		this.width = width;
 		this.height = height;
 	}
-	set width(width){
-		this.width = width;
-	}
+	// set width(width){
+	// 	this.width = width;
+	// }
 	get width(){
 		return this.width;
 	}
@@ -14,7 +14,7 @@ class Rectangle {
 		return this.height;
 	}
 	getArea() {
-    return this._width * this._height;
+    return this.width * this.height;
   }
 }
 
@@ -24,7 +24,7 @@ class Square extends Rectangle {
   }
 
   getPerimeter() {
-    return 4 * this._width; // Perimeter of a square is 4 times the side length
+    return 4 * this.width; // Perimeter of a square is 4 times the side length
   }
 }
 
